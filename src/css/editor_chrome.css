@@ -1,0 +1,8 @@
+.monaco-editor .monaco-scrollable-element .slider {
+    background: radial-gradient(circle at 14px 18px, white 5px, transparent 7px) no-repeat, radial-gradient(circle at 14px calc(100% - 18px), white 5px, transparent 7px) no-repeat, linear-gradient(white, white) center no-repeat;
+    box-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 0, 225);
+  }
