@@ -18,8 +18,32 @@
       {
         "command": "neon-scrollbar.enableNeon",
         "title": "enable neon"
+      },
+      {
+        "command": "neon-scrollbar.disableNeon",
+        "title": "disable neon"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "NeonScrollbar",
+      "properties": {
+        "NeonScrollbar.RGBred": {
+          "type": "number",
+          "default": 255,
+          "description": "Set the red value of rgb"
+        },
+        "NeonScrollbar.RGBgreen": {
+          "type": "number",
+          "default": 0,
+          "description": "Set the green value of rgb"
+        },
+        "NeonScrollbar.RGBblue": {
+          "type": "number",
+          "default": 255,
+          "description": "Set the blue value of rgb"
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -36,5 +60,6 @@
     "glob": "^7.1.7",
     "mocha": "^9.1.1",
     "typescript": "^4.4.3"
-  }
+  },
+  "publisher": "KouWakai"
 }
