@@ -32,14 +32,14 @@ function activate(context) {
 		const htmlFile =
 		base +
 		(isWin
-			? "\\electron-browser\\workbench\\workbench.html"
-			: "/electron-browser/workbench/workbench.html");
+			? "\\electron-sandbox\\workbench\\workbench.html"
+			: "/electron-sandbox/workbench/workbench.html");
 
 		const appendcss =
 		base +
 				(isWin
-					? "\\electron-browser\\workbench\\neonscrollbar.js"
-					: "/electron-browser/workbench/neonscrollbar.js");
+					? "\\electron-sandbox\\workbench\\neonscrollbar.js"
+					: "/electron-sandbox/workbench/neonscrollbar.js");
 
 		const csstemplate = fs.readFileSync(__dirname +'/src/css/appends.css', 'utf-8');
 		const neonbar = csstemplate.replace(/rgb\(255, 0, 225/g, rgb);
@@ -87,8 +87,8 @@ function uninstall() {
 	var htmlFile =
 		base +
 		(isWin
-			? "\\electron-browser\\workbench\\workbench.html"
-			: "/electron-browser/workbench/workbench.html");
+			? "\\electron-sandbox\\workbench\\workbench.html"
+			: "/electron-sandbox/workbench/workbench.html");
 
 	// modify workbench html
 	const html = fs.readFileSync(htmlFile, "utf-8");
